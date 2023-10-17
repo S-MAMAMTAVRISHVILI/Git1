@@ -6,8 +6,5 @@ public class Problem15II extends ConsoleProgram {
 		int num2 = readInt("Enter second number:");
 		double avgInDoubles = (num1 + num2) / 2.0;
 		println(avgInDoubles);
-		
-		
-		
 	}
 }
