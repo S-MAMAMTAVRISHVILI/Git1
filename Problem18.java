@@ -11,5 +11,5 @@ public class Problem18 extends ConsoleProgram {
 	 
 	 
 	 
- }
+	}	
 }
