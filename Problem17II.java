@@ -42,4 +42,3 @@ public class Problem17II extends ConsoleProgram {
 
 
 
-}
