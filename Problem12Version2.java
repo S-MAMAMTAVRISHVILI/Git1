@@ -1,3 +1,4 @@
+import acm.graphics.GLine;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
@@ -55,11 +56,28 @@ public class Problem12Version2 extends GraphicsProgram {
 		
 	}
 	private void drawRoof() {
-		// TODO Auto-generated method stub
+		int topLeftCornerX = BASE_X_COORDINATE;
+		int topLeftCornerY = BASE_Y_COORDINATE - WALL_HEIGHT;
+		
+		int topRightCornerX = BASE_X_COORDINATE + WALL_WIDTH;
+		int topRightCornerY = BASE_Y_COORDINATE - WALL_HEIGHT;
+		
+		int middleX = (topLeftCornerX + topRightCornerX) / 2;
+		int middleY = topLeftCornerY - ROOF_HEIGHT;
+		
+		GLine leftSlope = new GLine(topLeftCornerX, topLeftCornerY, middleX, middleY);
+		GLine rightSlope = new GLine(middleX, middleY, topRightCornerX, topRightCornerY);
+		
+		add(leftSlope);
+		add(rightSlope);
 		
 	}
 	private void drawWalls() {
-		// TODO Auto-generated method stub
+		GRect walls = new GRect(BASE_X_COORDINATE,
+				BASE_Y_COORDINATE - WALL_HEIGHT,
+				WALL_WIDTH,
+				WALL_HEIGHT);
+		add(walls);
 		
 	}
 }
