@@ -1,3 +1,4 @@
+import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 public class Problem12Version2 extends GraphicsProgram {
@@ -44,7 +45,10 @@ public class Problem12Version2 extends GraphicsProgram {
 	}
 	private void drawDoor() {
 		GRect door = new GRect(BASE_X_COORDINATE + DOOR_LEFT_OFFSET,
-																	)
+															BASE_Y_COORDINATE -	DOOR_HEIGHT,
+															DOOR_WIDTH,
+															DOOR_HEIGHT);
+		add(door);
 		
 	}
 	private void drawRoof() {
