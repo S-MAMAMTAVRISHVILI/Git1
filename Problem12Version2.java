@@ -40,8 +40,10 @@ public class Problem12Version2 extends GraphicsProgram {
 		
 	
 	private void drawWindow() {
-		GRect window = new GRect(BASE_X_COORDINATE + WINDOW_LEFT_OFFSET, BASE_Y_COORDINATE - WINDOW_BASE_OFFSET,
-									WINDOW_WIDTH, WINDOW_HEIGHT);
+		GRect window = new GRect(BASE_X_COORDINATE + WINDOW_LEFT_OFFSET,
+												BASE_Y_COORDINATE - WINDOW_BASE_OFFSET - WINDOW_HEIGHT,
+												WINDOW_WIDTH, 
+												WINDOW_HEIGHT);
 		add(window);
 	}
 	private void drawDoor() {
