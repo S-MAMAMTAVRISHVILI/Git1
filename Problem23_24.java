@@ -5,17 +5,6 @@ public class Problem23_24 extends ConsoleProgram{
 		int n = readInt("Enter n: ");
 		int sum = calculateSum(n);
 		println("sum of numbers 1..n is: " + sum);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 
 	private int calculateSum(int n) {
