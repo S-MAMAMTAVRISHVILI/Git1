@@ -1,9 +1,5 @@
 import acm.program.ConsoleProgram;
 
-
-
-
-
 public class Problem18Version1 extends ConsoleProgram {
 	public void run() {
 		int num1 = readInt("Enter number1: ");
