@@ -15,7 +15,7 @@ public class Problem21Version1 extends GraphicsProgram{
 		double y1 = getHeight() / (HORIZONTALLINES + 1);
 		double x2 = getWidth();
 		double y2 = getHeight() / (HORIZONTALLINES + 1);
-		for(int i = 0; i <= HORIZONTALLINES; i++){
+		for(int i = 1; i <= HORIZONTALLINES; i++){
 			add(new GLine(x1, y1 * i, x2, y2 * i));
 		}
 		
@@ -26,7 +26,7 @@ public class Problem21Version1 extends GraphicsProgram{
 		double y1 = 0;
 		double x2 = getWidth() / (VERTICALLINES + 1);
 		double y2 = getHeight();
-		for(int i = 0; i <= VERTICALLINES; i++){
+		for(int i = 1; i <= VERTICALLINES; i++){
 			add(new GLine(x1 * i, y1, x2 * i, y2));
 		}
 	}
