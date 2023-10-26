@@ -1,8 +1,8 @@
 import acm.program.ConsoleProgram;
 
 public class Problem29 extends ConsoleProgram {
-	public void run() {
-		int n = readInt("Number is: ");
+	
+	/*	int n = readInt("Number is: ");
 		int sum = fibonacci(n);
 		Println("Fibonacci(n) is:" + sum);
 			
@@ -24,4 +24,5 @@ public class Problem29 extends ConsoleProgram {
 		
 		return 0;
 	}
+*/
 }
