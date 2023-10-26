@@ -7,15 +7,18 @@ public class Problem28 extends ConsoleProgram {
 	public void run() {
 		int n = 1;
 		int sum = 0;
-		while(n >= 0){
+		while(n != SENTINEL){
 			n = readInt("Enter n: ");
+			if(n >= 0){
 			sum = checkNumber(n, sum);
-				
+			}else {
+			println("Number should be nonnegative!");	
+			}	
 			
 		
 		
 		}
-		println("Sum of even numbers is: " + sum);
+		println("Number of even numbers is: " + sum);
 		
 		
 		
