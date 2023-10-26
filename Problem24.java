@@ -5,8 +5,8 @@ public class Problem24 extends ConsoleProgram {
 		int n = readInt("Enter n: ");
 		int sum = calculateSum(n);
 		println("sum of numbers 1..n is: " + sum);
-		int numDivisors = numberOfDivisors(n);
-		println("number of divisors is: " + numDivisors);
+		//int numDivisors = numberOfDivisors(n);
+		//println("number of divisors is: " + numDivisors);
 	
 	
 	
