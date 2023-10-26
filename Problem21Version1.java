@@ -30,12 +30,12 @@ public class Problem21Version1 extends GraphicsProgram{
 			add(new GLine(x1 * i, y1, x2 * i, y2));
 		}
 	}
-
-
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
