@@ -1,4 +1,17 @@
+import acm.program.ConsoleProgram;
 
-public class Problem18Version1 {
 
+
+
+
+public class Problem18Version1 extends ConsoleProgram {
+	public void run() {
+		int num1 = readInt("Enter number1: ");
+		int num2 = readInt("Enter number2: ");
+		if(num1 >= num2){
+			println(num1);
+		}else{
+		println(num2);	
+		} 
+	}
 }
