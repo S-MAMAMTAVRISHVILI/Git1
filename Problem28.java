@@ -15,7 +15,7 @@ public class Problem28 extends ConsoleProgram {
 		
 		
 		}
-		println(sum);
+		println("Sum of even numbers is: " + sum);
 		
 		
 		
