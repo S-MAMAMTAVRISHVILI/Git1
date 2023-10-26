@@ -17,23 +17,8 @@ public class Problem28 extends ConsoleProgram {
 			}else {
 			println("Number should be nonnegative!");	
 			}	
-			
-		
-		
 		}
 		println("Number of even numbers is: " + sum);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 
 	private int checkNumber(int n, int sum) {
@@ -45,6 +30,7 @@ public class Problem28 extends ConsoleProgram {
 		
 		return(sum);
 	}
+}	
 	
 	
 	
@@ -58,5 +44,4 @@ public class Problem28 extends ConsoleProgram {
 	
 	
 	
-	
-}
+
