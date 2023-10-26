@@ -23,22 +23,21 @@ public class Problem24 extends ConsoleProgram {
 		}
 		return sum;
 	}	
-		
-	private int numberOfDivisors(int n) {
-		int num = 0;
-		for(int i = 1; i <= n; i++){
-			if (n % i == 0) {
-				num += 1;
+//		private int numberOfDivisors(int n) {
+//		int num = 0;
+//		for(int i = 1; i <= n; i++){
+//			if (n % i == 0) {
+//				num += 1;
 				
 				
-			}
-		return(num);	
+	//		}
+//		return(num);	
 			
 			
 			
 			
 			
-		}
+	//	}
 		
 		
 	}
@@ -50,4 +49,4 @@ public class Problem24 extends ConsoleProgram {
 		
 		
 	
-}
+
