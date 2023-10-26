@@ -9,6 +9,9 @@ public class Problem28 extends ConsoleProgram {
 		int sum = 0;
 		while(n != SENTINEL){
 			n = readInt("Enter n: ");
+			if(n==SENTINEL){
+				break;
+			}
 			if(n > -1){
 			sum = checkNumber(n, sum);
 			}else {
