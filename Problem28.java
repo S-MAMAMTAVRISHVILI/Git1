@@ -9,7 +9,7 @@ public class Problem28 extends ConsoleProgram {
 		int sum = 0;
 		while(n != SENTINEL){
 			n = readInt("Enter n: ");
-			if(n >= 0){
+			if(n > -1){
 			sum = checkNumber(n, sum);
 			}else {
 			println("Number should be nonnegative!");	
