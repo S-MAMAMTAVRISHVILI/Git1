@@ -20,7 +20,7 @@ public class Problem30 extends ConsoleProgram {
 	private int reverseNumber(int n) {
 		while( n != 0){
 			int x = n % 10;
-			println(x);
+			print(x);
 			n = n / 10;
 			
 			
