@@ -21,7 +21,7 @@ public class Problem30 extends ConsoleProgram {
 		while( n != 0){
 			int x = n % 10;
 			println(x);
-			x = x / 10;
+			n = n / 10;
 			
 			
 			
