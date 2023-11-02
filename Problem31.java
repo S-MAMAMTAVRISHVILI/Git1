@@ -9,8 +9,11 @@ public class Problem31 extends ConsoleProgram {
 	public void run() {
 		int n = readInt("Enter number: ");
 		boolean x = checkPrime(n);
-		println("The number is" + x);
-		
+		if(x == false){
+			println("The number is not prime.");	 
+		}else{
+		println("The number is prime.");
+		}
 		
 		
 		
