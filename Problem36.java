@@ -8,7 +8,7 @@ public class Problem36 extends ConsoleProgram {
 
 	public void run() {
 
-		int sumFlips = 0;
+		double sumFlips = 0;
 
 		for (int i = 0; i < NUM_EXPERIMENTS; i++) {
 			int currFlips = holdExperiment();
