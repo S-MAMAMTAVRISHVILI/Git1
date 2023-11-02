@@ -27,7 +27,7 @@ public class Problem31 extends ConsoleProgram {
 		double x = Math.sqrt(n);
 		for(int i = 2; i <= x; i++){
 		if(n % i == 0){
-			println("The number is prime");
+			println("The number is not prime");
 			break;
 		}
 			
