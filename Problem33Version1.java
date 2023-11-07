@@ -12,7 +12,7 @@ public class Problem33Version1 extends GraphicsProgram {
 		GOval oval = new GOval(2 * radius, 2 * radius);
 		oval.setFilled(true);
 		oval.setColor(rgen.nextColor());
-		add(oval, getWidth() / 2 - radius, getWidth() / 2 - radius);
+		add(oval, getWidth() / 2 - radius, getHeight() / 2 - radius);
 		
 		
 		
