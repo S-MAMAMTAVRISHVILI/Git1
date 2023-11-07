@@ -6,7 +6,7 @@ public class Problem37 extends ConsoleProgram {
 	public void run() {
 		int betNumber = readBet();
 		int rouletteNumber = spinRoulette();
-		if(rouletteNummber == spinRoulette){
+		if(betNumber == rouletteNumber){
 			println("You won!");
 		}else{
 			println("You lost!");
