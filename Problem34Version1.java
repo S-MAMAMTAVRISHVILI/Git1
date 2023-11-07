@@ -7,7 +7,7 @@ public class Problem34Version1 extends GraphicsProgram {
 	private static final int number = 1000;
 
 	public void run() {
-		
+
 		for (int i = 0; i < number; i++) {
 			double radius = rgen.nextDouble(0, getWidth() / 8);
 			double x = rgen.nextDouble(0, getWidth() - 2 * radius);
