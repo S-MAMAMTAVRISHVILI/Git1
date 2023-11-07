@@ -9,8 +9,8 @@ public class Problem34Version1 extends GraphicsProgram {
 	public void run() {
 		
 		for (int i = 0; i < number; i++) {
-			double x = rgen.nextDouble(0, getWidth() / 2);
-			double y = rgen.nextDouble(0, getHeight() / 2);
+			double x = rgen.nextDouble(0, getWidth());
+			double y = rgen.nextDouble(0, getHeight());
 			double radius = rgen.nextDouble(0, getWidth() / 8);
 			GOval oval = new GOval(2 * radius, 2 * radius);
 			oval.setFilled(true);
