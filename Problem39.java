@@ -12,14 +12,20 @@ public class Problem39 extends GraphicsProgram {
 		double y1 = (getHeight() - BALL_DIAMETER) / 2;
 		ball.setFilled(true);
 		add(ball, x1, y1);
+		while (true) {
+			while ((ball.getX() <= getWidth() - BALL_DIAMETER)) {
+				ball.move(1, 0);
+				ball.pause(PAUSE_TIME);
+			}
+			while (ball.getX()>= 0){
+				ball.move(-1, 0);
+				ball.pause(PAUSE_TIME);
+			}
 		
-		while((ball.getX() <= getWidth() - BALL_DIAMETER)) { 
-			ball.move(1, 0);
-			ball.pause(PAUSE_TIME);	
-			
+		
+		
+		
 		}
-			
-		
 
 	}
 }
