@@ -31,7 +31,11 @@ public class Problem37 extends ConsoleProgram {
 
 	private int readBet() {
 		int bet = readInt("Enter number(0 - 36)");
-		//validation logic
+		if(bet < 0 || bet > 36) {
+			bet = readInt("Enter number(0 - 36)");
+		} else {
 		return bet;
+		}
+	return 0;
 	}
 }
