@@ -3,24 +3,16 @@ import acm.util.RandomGenerator;
 
 public class Problem37 extends ConsoleProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
+
 	public void run() {
 		int betNumber = readBet();
 		int rouletteNumber = spinRoulette();
-		if(betNumber == rouletteNumber){
+		if (betNumber == rouletteNumber) {
 			println("You won!");
-		}else{
+		} else {
 			println("You lost!");
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 	}
 
 	private int spinRoulette() {
@@ -31,11 +23,11 @@ public class Problem37 extends ConsoleProgram {
 
 	private int readBet() {
 		int bet = readInt("Enter number(0 - 36) ");
-		if(bet < 0 || bet > 36) {
+		if (bet < 0 || bet > 36) {
 			bet = readInt("Enter number(0 - 36) ");
 		} else {
-		return bet;
+			return bet;
 		}
-	return 0;
+		return 0;
 	}
 }
