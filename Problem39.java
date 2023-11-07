@@ -13,7 +13,7 @@ public class Problem39 extends GraphicsProgram {
 		ball.setFilled(true);
 		add(ball, x1, y1);
 		
-		while((ball.getX() <= getWidth() - 2 * BALL_RADIUS)) { 
+		while((ball.getX() <= getWidth() - BALL_RADIUS)) { 
 			ball.move(1, 0);
 			ball.pause(PAUSE_TIME);	
 			
