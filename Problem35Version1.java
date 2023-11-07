@@ -11,10 +11,11 @@ public class Problem35Version1 extends ConsoleProgram {
 		for(int i = 0; i < NUM_EXPERIMENTS; i++){
 			boolean flip = rgen.nextBoolean();
 			if(flip = true){
-			x += x;	
+			x += x;
+			
 			}
 		}
-		print(x / NUM_EXPERIMENTS);
+		
 		
 		
 		
