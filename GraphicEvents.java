@@ -6,25 +6,38 @@ import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 public class GraphicEvents extends GraphicsProgram {
-	public void run() {
-		GRect rect = new GRect(100, 100);
+	private GRect rect;
+	private GRect rect2;
+	
+	
+	public void init() {
+		rect = new GRect(100, 100);
 		rect.setFilled(true);
 		add(rect);
 		
-		GRect rect2 = new GRect(100, 100);
+		rect2 = new GRect(100, 100);
 		rect2.setFilled(true);
 		add(rect2, 200, 200);
 		
 		addMouseListeners();
 	}
-	
+	public void run() {
+		
+		
+	}
 	public void mouseClicked(MouseEvent e) {
+		
 //		e.getX();
 		GObject obj = getElementAt(e.getX(), e.getY());
-		if(obj != null) {
-			obj.setColor(Color.RED);
-		}
+//		if(obj != null) {
+//			obj.setColor(Color.RED);
+//		}
 		
+		if(obj == rect) {
+			obj.setColor(Color.RED);
+		}else if (obj == rect2) {
+			obj.setColor(Color.BLUE);
+		}
 		
 		
 		
