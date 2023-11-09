@@ -1,5 +1,6 @@
 import java.awt.event.MouseEvent;
 
+import acm.graphics.GObject;
 import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
@@ -20,7 +21,10 @@ public class Problem41 extends GraphicsProgram {
 		
 	}
 	public void mouseMoved(MouseEvent e) {
-	add(oval);	
+	//GObject obj = getElementAt(e.getX(), e.getY());
+	while(true) {
+		add(oval);
+	}	
 		
 		
 	}
