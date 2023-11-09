@@ -22,9 +22,9 @@ public class Problem41 extends GraphicsProgram {
 	}
 	public void mouseMoved(MouseEvent e) {
 	//GObject obj = getElementAt(e.getX(), e.getY());
-	while(true) {
-		add(oval, e.getX(), e.getY());
-	}	
+	
+	add(oval, e.getX(), e.getY());
+		
 		
 		
 	}
