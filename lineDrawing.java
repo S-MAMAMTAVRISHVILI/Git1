@@ -11,7 +11,7 @@ public class lineDrawing extends GraphicsProgram {
 	}
 
 	public void mousePressed(MouseEvent e) {
-		GLine line = new GLine(e.getX(), e.getY(), e.getX(), e.getY());
+		line = new GLine(e.getX(), e.getY(), e.getX(), e.getY());
 		add(line);
 	}
 	public void mouseDragged(MouseEvent e) {
