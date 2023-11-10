@@ -13,9 +13,9 @@ public class Problem41 extends GraphicsProgram {
 	public void run() {
 		oval = new GOval(1, 1);
 		oval.setFilled(true);
-		add(oval, 100, 100);
+		
 		// oval.setColor(rand.nextColor());
-		getMouseMotionListeners();
+		addMouseListeners();
 
 	}
 
