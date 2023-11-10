@@ -30,7 +30,11 @@ public class mouseDragg extends GraphicsProgram {
 			object.move(e.getX() - point.getX(), e.getY() - point.getY());
 			point = new GPoint(e.getPoint());
 		}
-		
-		
 	}
+	public void mouseClicked(MouseEvent e) {
+	if(object != null){}
+	object.sendToFront();
+	}	
+		
+	
 }
