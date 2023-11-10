@@ -7,9 +7,6 @@ import acm.util.RandomGenerator;
 
 public class Problem41 extends GraphicsProgram {
 
-
-	
-
 	public void run() {
 
 		addMouseListeners();
