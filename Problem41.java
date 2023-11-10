@@ -9,13 +9,13 @@ public class Problem41 extends GraphicsProgram {
 
 	private GOval oval;
 	private RandomGenerator rand = RandomGenerator.getInstance();
-
-	public void run() {
+	
+	public void init() {
 		oval = new GOval(1, 1);
 		oval.setFilled(true);
-		
-		// oval.setColor(rand.nextColor());
 		addMouseListeners();
+		// oval.setColor(rand.nextColor());
+		
 
 	}
 
