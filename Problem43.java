@@ -11,7 +11,7 @@ public class Problem43 extends GraphicsProgram {
 		oval = new GOval(100, 100);
 		oval.setFilled(true);
 		oval.setColor(rgen.nextColor());
-		add(oval, getWidth() - 50, getHeight() - 50);
+		add(oval, getWidth() / 2 - 50, getHeight() / 2 - 50);
 		
 		addMouseListeners();
 	}
