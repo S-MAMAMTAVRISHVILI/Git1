@@ -21,9 +21,9 @@ public class Problem41 extends GraphicsProgram {
 
 	public void mousePressed(MouseEvent e) {
 		// GObject obj = getElementAt(e.getX(), e.getY());
-		
+		while(true){
 		add(oval, e.getX(), e.getY());
-
+		}
 	}
 
 }
