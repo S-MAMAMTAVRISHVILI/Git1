@@ -12,7 +12,7 @@ public class Star extends GraphicsProgram {
 	public void mouseClicked(MouseEvent e) {
 		GOval oval = new GOval(OVAL_SIZE, OVAL_SIZE);
 		oval.setFilled(true);
-		add(oval, e.getX(), e.getY());
+		add(oval, e.getX() - OVAL_SIZE / 2, e.getY() - OVAL_SIZE / 2);
 		
 		
 	}
