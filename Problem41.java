@@ -7,8 +7,8 @@ import acm.util.RandomGenerator;
 
 public class Problem41 extends GraphicsProgram {
 
-	private GOval oval;
-	private RandomGenerator rand = RandomGenerator.getInstance();
+
+	
 
 	public void run() {
 
@@ -16,7 +16,7 @@ public class Problem41 extends GraphicsProgram {
 
 	}
 
-	public void mouseClicked(MouseEvent e) {
+	public void mouseMoved(MouseEvent e) {
 		GOval oval = new GOval(1, 1);
 		oval.setFilled(true);
 		add(oval, e.getX(), e.getY());
