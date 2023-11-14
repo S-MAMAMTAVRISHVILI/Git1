@@ -9,29 +9,25 @@ public class Problem43 extends GraphicsProgram {
 	private GOval oval;
 	private GPoint point;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
-	
+	private int prevX;
+	private int prevY;
 	public void init() {
 		oval = new GOval(100, 100);
 		oval.setFilled(true);
 		oval.setColor(rgen.nextColor());
 		add(oval, getWidth() / 2 - 50, getHeight() / 2 - 50);
-		
+
 		addMouseListeners();
 	}
+
 	public void mousePressed(MouseEvent e) {
-		point = new GPoint(e.getX(), e.getY()); 
+		prevX = e.getX();
+		prevY = e.getY();
 	}
-	
-	
+
 	public void mouseDragged(MouseEvent e) {
-		oval.setLocation(point);
-		
-		
-		
-		
-		
+		oval.move(e.getX() - prevX, e.getY() - prevY);
+
 	}
-
-
 
 }
