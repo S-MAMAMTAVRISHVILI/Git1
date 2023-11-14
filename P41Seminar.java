@@ -13,19 +13,19 @@ public class P41Seminar extends GraphicsProgram {
 	}
 	@Override
 	public void mouseDragged(MouseEvent e) {
-		GOval brush = new GOval(2 * RADIUS, 2 * RADIUS);
-		int x = e.getX() - RADIUS;
-		int y = e.getY() - RADIUS;
-		add(brush ,x, y);
+		addBrush(e.getX() ,e.getY());
 	
 	
 	}
 	public void mousePressed(MouseEvent e) {
-		GOval brush = new GOval(2 * RADIUS, 2 * RADIUS);
-		int x = e.getX() - RADIUS;
-		int y = e.getY() - RADIUS;
-		add(brush ,x, y);
+		addBrush(e.getX() ,e.getY());
 	
 	}
-	
+	private void addBrush(int centerX, int centerY) {
+		GOval brush = new GOval(2 * RADIUS, 2 * RADIUS);
+		int x = centerX - RADIUS;
+		int y = centerY - RADIUS;
+		brush.setFilled(true);
+		add(brush ,x, y);
+	}
 }
