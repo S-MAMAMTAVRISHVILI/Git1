@@ -9,6 +9,7 @@ public class Problem43 extends GraphicsProgram {
 	private GOval oval;
 	private GPoint point;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
+	
 	public void init() {
 		oval = new GOval(100, 100);
 		oval.setFilled(true);
@@ -17,8 +18,13 @@ public class Problem43 extends GraphicsProgram {
 		
 		addMouseListeners();
 	}
+	public void mousePressed(MouseEvent e) {
+		point = new GPoint(e.getX(), e.getY()); 
+	}
+	
+	
 	public void mouseDragged(MouseEvent e) {
-		oval.setLocation(e.getX() - 50,e.getY() - 50);
+		oval.setLocation(point);
 		
 		
 		
