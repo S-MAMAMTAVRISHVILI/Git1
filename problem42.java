@@ -6,7 +6,7 @@ import acm.program.GraphicsProgram;
 public class problem42 extends GraphicsProgram {
 	private GLine line;
 
-	public void init() {
+	public void run() {
 		addMouseListeners();
 	}
 
