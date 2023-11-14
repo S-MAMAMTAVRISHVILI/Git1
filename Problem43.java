@@ -18,7 +18,7 @@ public class Problem43 extends GraphicsProgram {
 		addMouseListeners();
 	}
 	public void mouseDragged(MouseEvent e) {
-		oval.move(e.getX(),e.getY());
+		oval.setLocation(e.getX(),e.getY());
 		
 		
 		
