@@ -13,7 +13,7 @@ public class Problem45 extends ConsoleProgram {
 				number += number;
 			}
 		}
-		
+		println(number);
 		
 		
 		
