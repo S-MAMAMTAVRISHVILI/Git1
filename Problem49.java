@@ -4,7 +4,7 @@ public class Problem49 extends ConsoleProgram {
 	public void run() {
 		String numStr = "1234" ;
 		int num = stringToInt(numStr);		
-		
+		println(num);
 		
 		
 		
