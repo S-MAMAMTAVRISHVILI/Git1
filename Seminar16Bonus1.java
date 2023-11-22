@@ -34,12 +34,12 @@ public class Seminar16Bonus1 extends ConsoleProgram {
 	private boolean checkFrequency(boolean isAnagram, String text1, String text2, int i, int j) {
 		int number1 = 0;
 		int number2 = 0;
-		for(int a = 0; i < text1.length(); i++) {
+		for(int a = 0; a < text1.length(); a++) {
 			if(text1.charAt(i) == text1.charAt(a)) {
 				number1 = number1 + 1;
 			}
 		}
-		for(int b = 0; j < text2.length(); i++) {
+		for(int b = 0; b < text2.length(); b++) {
 			if(text2.charAt(j) == text2.charAt(b)) {
 				number2 = number2 + 1;
 			}
