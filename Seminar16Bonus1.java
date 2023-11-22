@@ -39,8 +39,8 @@ public class Seminar16Bonus1 extends ConsoleProgram {
 				number1 = number1 + 1;
 			}
 		}
-		for(int b = 0; j < text1.length(); i++) {
-			if(text1.charAt(j) == text1.charAt(b)) {
+		for(int b = 0; j < text2.length(); i++) {
+			if(text2.charAt(j) == text2.charAt(b)) {
 				number2 = number2 + 1;
 			}
 		}
