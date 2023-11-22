@@ -44,11 +44,8 @@ public class Seminar16Bonus1 extends ConsoleProgram {
 				number2 = number2 + 1;
 			}
 		}
-		if(number1 == number2) {
-			return true;
-		} else {
-			return false;
-		}
+		return number1 == number2; 
+		
 	}	
 }		
 		
