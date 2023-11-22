@@ -22,7 +22,7 @@ public class Seminar16Bonus1 extends ConsoleProgram {
 			}
 		}
 		}
-		println("Two strings are anagrams : ");
+		println("Two strings are anagrams : " + isAnagram);
 		
 		
 	}
