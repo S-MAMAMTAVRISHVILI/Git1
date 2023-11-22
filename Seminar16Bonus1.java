@@ -20,6 +20,10 @@ public class Seminar16Bonus1 extends ConsoleProgram {
 				
 				}
 			}
+			if(isAnagram == false) {
+				break;
+			}
+		
 		}
 		}
 		println("Two strings are anagrams : " + isAnagram);
