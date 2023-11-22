@@ -4,7 +4,7 @@ public class Pr46 extends ConsoleProgram {
 	public void run() {
 		String text = readLine("Enter text : ");
 		char character = returnCharacter(text);
-		println("Most common caharcter is " + character);
+		println("Most common character is " + character);
 		
 		
 	}
