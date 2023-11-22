@@ -6,7 +6,7 @@ public class Seminar16Bonus1 extends ConsoleProgram {
 	public void run() {
 		String text1 = readLine("Enter text one : ");
 		String text2 = readLine("Enter text two : ");
-		boolean isAnagram = true;
+		boolean isAnagram = false;
 		if(text1.length() != text2.length()){
 			isAnagram = false;
 		} else {
