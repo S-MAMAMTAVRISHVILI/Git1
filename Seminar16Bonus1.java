@@ -10,19 +10,19 @@ public class Seminar16Bonus1 extends ConsoleProgram {
 		if(text1.length() != text2.length()){
 			isAnagram = false;
 		} else {
-			for(int i = 0; i < text1.length(); i++) {
-				for(int j = 0; j < text2.length(); j++){
-					if(text1.charAt(i) == text2.charAt(j)) {
-						isAnagram = checkFrequency(isAnagram, text1, text2 ,i, j);
-						if(isAnagram == false) {
-							break;
-						}
-					
+		for(int i = 0; i < text1.length(); i++) {
+			for(int j = 0; j < text2.length(); j++){
+				if(text1.charAt(i) == text2.charAt(j)) {
+					isAnagram = checkFrequency(isAnagram, text1, text2 ,i, j);
+					if(isAnagram == false) {
+						break;
 					}
+				
 				}
 			}
 		}
-		println("Two strings are anagrams : " + isAnagram);
+		}
+		println("Two strings are anagrams : ");
 		
 		
 	}
