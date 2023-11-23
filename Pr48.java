@@ -6,16 +6,15 @@ public class Pr48 extends ConsoleProgram {
 		int number = 0;
 		for(int i = 0; i < text.length(); i++) {
 			for(int j = 0; j < text.length(); j++) {
-				if(text.charAt(i) == text.charAt(j)) {
+				if(text.charAt(i) == text.charAt(j) && i <= j) {
 					number = number + 1;
 				}
 			}
-			
-			
-			
-			print(text.charAt(i));
-			println(" " + number + " times");
-			number = 0;
+			if(number > 0) {
+				print(text.charAt(i));
+				println(" " + number + " times");
+				number = 0;
+			}
 		}
 		
 		
