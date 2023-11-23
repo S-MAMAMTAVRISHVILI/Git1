@@ -7,6 +7,6 @@ public class Pr50 extends ConsoleProgram {
 		String text = readLine("Enter text: ");
 		StringTokenizer tokenizer = new StringTokenizer(text);
 		int number = tokenizer.countTokens();
-		println("The text contain " + number + "words");
+		println("The text contain " + number + " words");
 	}
 }
