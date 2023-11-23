@@ -11,7 +11,7 @@ public class Pr48 extends ConsoleProgram {
 				}
 			}
 			print(text.charAt(i) );
-			println(+ number + "times");
+			println(+ number + " times");
 			
 		}
 		
