@@ -10,7 +10,7 @@ public class Pr48 extends ConsoleProgram {
 					number = number + 1;
 				}
 			}
-			print(text.charAt(i));
+			print(text.charAt(i) );
 			println(+ number + "times");
 			
 		}
