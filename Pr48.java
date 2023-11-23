@@ -19,9 +19,5 @@ public class Pr48 extends ConsoleProgram {
 			}
 			number = 0;
 		}
-		
-		
-		
-		
 	}
 }
