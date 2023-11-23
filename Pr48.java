@@ -3,7 +3,17 @@ import acm.program.ConsoleProgram;
 public class Pr48 extends ConsoleProgram {
 	public void run() {
 		String text = readLine("Enter text : ");
-		println(text.charAt(0));
+		int number = 0;
+		for(int i = 0; i < text.length(); i++) {
+			for(int j = 0; j < text.length(); j++) {
+				if(text.charAt(i) == text.charAt(j)) {
+					number = number + 1;
+				}
+			}
+			println(text.charAt(i) + number + "times");
+			
+			
+		}
 		
 		
 		
