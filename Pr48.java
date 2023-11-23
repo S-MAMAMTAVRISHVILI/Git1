@@ -13,8 +13,8 @@ public class Pr48 extends ConsoleProgram {
 			if(number > 0) {
 				print(text.charAt(i));
 				println(" " + number + " times");
-				number = 0;
 			}
+			number = 0;
 		}
 		
 		
