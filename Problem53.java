@@ -32,7 +32,14 @@ public class Problem53 extends ConsoleProgram {
 	}
 	private void countSymbolNumber(String newLine) {
 		StringTokenizer tokenizer = new StringTokenizer(newLine);
-		String st = tokenizer.toString();
-		SYMBOL_NUMBER += st.length(); 
+		while (tokenizer.hasMoreTokens()) {
+			String st = tokenizer.nextToken();
+			SYMBOL_NUMBER += st.length(); 
+		}
 	}
+	private void countWordNumber(String newLine) {
+		
+	}
+
+
 }
