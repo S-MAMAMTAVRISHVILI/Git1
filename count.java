@@ -7,10 +7,9 @@ public class count extends ConsoleProgram {
 	public void run() {
 		String newLine = "Belli BelliGoal Bellighhhhh";
 		StringTokenizer tokenizer = new StringTokenizer(newLine);
-		while (tokenizer.nextElement() != null) {
-			String st = String.valueOf(tokenizer);
-			println(st);
-			SYMBOL_NUMBER += st.length();
-		}
+		String st = String.valueOf(tokenizer);
+		println(st);
+		SYMBOL_NUMBER += st.length();
+		
 	}
 }
