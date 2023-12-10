@@ -15,7 +15,7 @@ public class Problem53 extends ConsoleProgram {
 	private int SENTENCE_ENDING3 = 0;
 	public void run() {
 		try {
-			BufferedReader reader = new BufferedReader(new FileReader("ragacTeqsti"));
+			BufferedReader reader = new BufferedReader(new FileReader("RagacTeqsti.java"));
 			while(true) {
 				String newLine = reader.readLine();
 				if(newLine == null) {
