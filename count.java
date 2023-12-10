@@ -11,6 +11,7 @@ public class count extends ConsoleProgram {
 			String st = tokenizer.nextToken();
 			println(st);
 			SYMBOL_NUMBER += SYMBOL_NUMBER +  st.length();
+			println(SYMBOL_NUMBER);
 		}	
 		
 	}
