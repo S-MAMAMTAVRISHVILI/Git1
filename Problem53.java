@@ -22,6 +22,9 @@ public class Problem53 extends ConsoleProgram {
 					break;
 				}
 				countSymbolNumber(newLine);
+				countWordNumber(newLine);
+				countSentenceNumber();
+				countEndings();
 			}
 			reader.close();
 		} catch (FileNotFoundException e) {
@@ -38,8 +41,19 @@ public class Problem53 extends ConsoleProgram {
 		}
 	}
 	private void countWordNumber(String newLine) {
-		
+		StringTokenizer tokenizer = new StringTokenizer(newLine);
+		WORD_NUMBER += tokenizer.countTokens(); 
 	}
-
-
+	private void countSentenceNumber() {
+		SENTENCE_NUMBER += 1;
+	}
+	private void countEndings(String newLine) {
+		if(newLine.charAt(newLine.length() - 1) == '.') {
+			SENTENCE_ENDING1 += 1;
+		} else if(newLine.charAt(newLine.length() - 1) == '!') {
+			SENTENCE_ENDING2 += 1;
+		} else if(newLine.charAt(newLine.length() - 1) == '?') {
+			SENTENCE_ENDING3 += 1;
+		}
+	}
 }
