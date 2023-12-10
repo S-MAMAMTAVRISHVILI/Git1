@@ -10,7 +10,7 @@ public class count extends ConsoleProgram {
 		while(tokenizer.hasMoreTokens()) {
 			String st = tokenizer.nextToken();
 			println(st);
-			SYMBOL_NUMBER = SYMBOL_NUMBER + st.length();
+			SYMBOL_NUMBER += st.length();
 			println(SYMBOL_NUMBER);
 		}	
 		
