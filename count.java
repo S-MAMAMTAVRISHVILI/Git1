@@ -8,7 +8,7 @@ public class count extends ConsoleProgram {
 		String newLine = "Belli BelliGoal Bellighhhhh";
 		StringTokenizer tokenizer = new StringTokenizer(newLine);
 
-		println(tokenizer.nextToken());
+		println(tokenizer.toString());
 			
 		
 	}
