@@ -24,7 +24,7 @@ public class Problem53 extends ConsoleProgram {
 				countSymbolNumber(newLine);
 				countWordNumber(newLine);
 				countSentenceNumber();
-				countEndings();
+				countEndings(newLine);
 			}
 			reader.close();
 		} catch (FileNotFoundException e) {
