@@ -32,6 +32,12 @@ public class Problem53 extends ConsoleProgram {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		println("Total symbols : " + SYMBOL_NUMBER);
+		println("Total words : " + WORD_NUMBER);
+		println("Total sentences : " + SENTENCE_NUMBER);
+		println("Sentences ending with '.' " + SENTENCE_ENDING1);
+		println("Sentences ending with '!' " + SENTENCE_ENDING2);
+		println("Sentences ending with '?' " + SENTENCE_ENDING3);
 	}
 	private void countSymbolNumber(String newLine) {
 		StringTokenizer tokenizer = new StringTokenizer(newLine);
