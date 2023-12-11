@@ -10,8 +10,8 @@ public class Problem54 extends ConsoleProgram {
 			array[i] = readInt();
 		}
 		Arrays.sort(array);
-		println(array[n - 2]);
-		println(array[n - 1]);
+		println("Second maxiumum : " + array[n - 2]);
+		println("Maximum : " + array[n - 1]);
 	}
 }
  
