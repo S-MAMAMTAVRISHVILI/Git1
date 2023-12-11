@@ -10,7 +10,10 @@ public class Problem55 extends ConsoleProgram {
 		for(int i = 0; i < n; i++) {
 			array[i] = readInt();
 		}
-		int[] arrayOld = array;
+		int[] arrayOld = new int[n];
+		for(int i = 0; i < n; i++) {
+			arrayOld[i] = array[i];
+		}
 		Arrays.sort(array);
 		if(Arrays.equals(arrayOld, array)) {
 			println("sorted");
