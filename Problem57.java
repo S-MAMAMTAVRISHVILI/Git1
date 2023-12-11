@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 import acm.program.ConsoleProgram;
 
 public class Problem57 extends ConsoleProgram {
@@ -33,6 +35,6 @@ public class Problem57 extends ConsoleProgram {
 			num1 = 0;
 			num2 = 0;
 		}
-		return arrayWord1.equals(arrayWord2);
+		return Arrays.equals(arrayWord1, arrayWord2);
 	}
 }
