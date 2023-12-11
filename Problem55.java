@@ -12,7 +12,7 @@ public class Problem55 extends ConsoleProgram {
 		}
 		int[] arrayOld = array;
 		Arrays.sort(array);
-		if(array.equals(arrayOld)) {
+		if(Arrays.equals(arrayOld, array)) {
 			println("sorted");
 		} else {
 			println("not sorted");
