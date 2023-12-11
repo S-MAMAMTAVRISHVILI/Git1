@@ -16,12 +16,13 @@ public class Problem57 extends ConsoleProgram {
 		int[] arrayWord1 = new int[26];
 		int[] arrayWord2 = new int[26];
 		char[] alphabet = new char[26];
-		int num1 = 0;
-		int num2 = 0;
+		
 		for(int j = 0; j < alphabet.length; j++) {
 			alphabet[j] = (char) ('a' + j);
 		}
 		for(int i = 0; i < alphabet.length; i++) {
+			int num1 = 0;
+			int num2 = 0;
 			for(int k = 0; k < word1.length(); k++) {
 				if(alphabet[i] == word1.charAt(k)) {
 					num1 += 1;
@@ -32,8 +33,6 @@ public class Problem57 extends ConsoleProgram {
 			}
 			arrayWord1[i] = num1;
 			arrayWord2[i] = num2;
-			num1 = 0;
-			num2 = 0;
 		}
 		return Arrays.equals(arrayWord1, arrayWord2);
 	}
