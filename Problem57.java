@@ -29,12 +29,10 @@ public class Problem57 extends ConsoleProgram {
 				}
 			}
 			arrayWord1[i] = num1;
-			num1 = 0;
 			arrayWord2[i] = num2;
+			num1 = 0;
 			num2 = 0;
 		}
 		return arrayWord1.equals(arrayWord2);
 	}
-	
-	
 }
