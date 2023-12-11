@@ -10,12 +10,12 @@ public class Problem55 extends ConsoleProgram {
 		for(int i = 0; i < n; i++) {
 			array[i] = readInt();
 		}
-//		int[] arrayOld = new int[n];
-////		for(int i = 0; i < n; i++) {
-////			arrayOld[i] = array[i];
-////		}
-		// Alternative:
-		int[] arrayOld = Arrays.copyOf(array, array.length);
+		int[] arrayOld = new int[n];
+		for(int i = 0; i < n; i++) {
+			arrayOld[i] = array[i];
+		}
+// 		Alternative:
+//		int[] arrayOld = Arrays.copyOf(array, array.length);
 		Arrays.sort(array);
 		if(Arrays.equals(arrayOld, array)) {
 			println("sorted");
