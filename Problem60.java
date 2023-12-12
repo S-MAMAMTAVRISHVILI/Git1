@@ -1,4 +1,21 @@
+import java.util.ArrayList;
 
-public class Problem60 {
+import acm.program.ConsoleProgram;
 
+public class Problem60 extends ConsoleProgram {
+	public void run() {
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		while(true) {
+			int digit = readInt();
+			if(digit == -1) {
+				break;
+			}
+			list.add(digit);
+		}
+		println("Reversed : ");
+		for(int i = list.size(); i > 0; i--) {
+			println(list.get(i));
+		}
+	
+	}
 }
