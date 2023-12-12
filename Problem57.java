@@ -1,7 +1,6 @@
 import java.util.Arrays;
 
 import acm.program.ConsoleProgram;
-
 public class Problem57 extends ConsoleProgram {
 	public void run() {
 		String word1 = readLine();
