@@ -12,7 +12,7 @@ public class MatrixPractice extends ConsoleProgram {
 		println(myMatrix);
 		for (int i = 0; i < myMatrix.length; i++) {
 			println(myMatrix[i]);
-			for(int j = 0; j < myMatrix[i].length; i++) {
+			for(int j = 0; j < myMatrix[i].length; j++) {
 				println(myMatrix[i][j]);
 			}
 		}
