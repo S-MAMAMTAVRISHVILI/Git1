@@ -13,7 +13,7 @@ public class Problem60 extends ConsoleProgram {
 			list.add(digit);
 		}
 		println("Reversed : ");
-		for(int i = list.size(); i > 0; i--) {
+		for(int i = list.size() - 1; i >= 0; i--) {
 			println(list.get(i));
 		}
 	
