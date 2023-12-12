@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 import acm.program.ConsoleProgram;
 
 public class MatrixPractice extends ConsoleProgram {
@@ -16,5 +18,6 @@ public class MatrixPractice extends ConsoleProgram {
 				println(myMatrix[i][j]);
 			}
 		}
+		println(Arrays.spliterator(myMatrix));
 	}
 }
