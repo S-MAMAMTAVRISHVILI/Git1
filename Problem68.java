@@ -10,6 +10,7 @@ public class Problem68 extends GraphicsProgram{
 	public void init() {
 		textField = new JTextField(20);
 		add(textField, SOUTH);
+		textField.addActionListener(this);
 		addActionListeners();
 	}
 	public void run() {
@@ -18,7 +19,7 @@ public class Problem68 extends GraphicsProgram{
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		
+		println("here");
 	}
 
 }
