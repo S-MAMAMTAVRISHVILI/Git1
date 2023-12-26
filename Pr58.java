@@ -12,7 +12,6 @@ public class Pr58 extends ConsoleProgram {
 				matrix[i][j] = n * i + j + 1;
 			}
 		}
-		
 		println(magicMatrix(matrix, n));
 	}
 
