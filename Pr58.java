@@ -7,11 +7,6 @@ public class Pr58 extends ConsoleProgram {
 	public void run() {
 		int n = readInt("Enter matrix size: ");
 		int[][] matrix  = new int[n][n];
-		for(int i = 0; i < n; i++) {
-			for(int j = 0; j < n; j++) {
-				matrix[i][j] = j + 1;
-			}
-		}
 		println(magicMatrix(matrix, n));
 	}
 
