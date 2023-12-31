@@ -6,7 +6,7 @@ public class Pr62 extends ConsoleProgram {
 	public void run() {
 		HashMap<String, Integer> nameBase = new HashMap<String, Integer>();
 		while(true) {
-			String name = readLine("Enter name");
+			String name = readLine("Enter name: ");
 			if(name.equals("")) {
 				break;
 			}
