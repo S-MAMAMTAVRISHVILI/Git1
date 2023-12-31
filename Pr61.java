@@ -11,12 +11,17 @@ public class Pr61 extends ConsoleProgram {
 			int x = readInt();
 			numbersList.add(x);
 		}
+		boolean pairFound = false;
 		for(int i = 0; i < numbersList.size(); i++) {
 			for(int j = 0; j < numbersList.size(); j++) {
 				if(numbersList.get(i) + numbersList.get(j) == m) {
 					println(numbersList.get(i) + " and " + numbersList.get(j));
+					pairFound = true;
 					break;
 				}
+			}
+			if(pairFound) {
+				break;
 			}
 		}
 	}
