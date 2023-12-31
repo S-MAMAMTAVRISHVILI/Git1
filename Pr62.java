@@ -21,6 +21,4 @@ public class Pr62 extends ConsoleProgram {
 			println(name + " " + nameBase.get(name));
 		}
 	}
-	
-	
 }
