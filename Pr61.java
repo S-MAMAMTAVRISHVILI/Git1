@@ -15,6 +15,7 @@ public class Pr61 extends ConsoleProgram {
 			for(int j = 0; j < numbersList.size(); j++) {
 				if(numbersList.get(i) + numbersList.get(j) == m) {
 					println(numbersList.get(i) + " and " + numbersList.get(j));
+					break;
 				}
 			}
 		}
