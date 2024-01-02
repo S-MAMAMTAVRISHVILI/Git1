@@ -30,6 +30,6 @@ public class Pr63 extends ConsoleProgram {
 				result = name;
 			}
 		}
-		println(result);
+		println("Person with most friends is " + result);
 	}
 }
