@@ -26,8 +26,8 @@ public class Pr66 extends ConsoleProgram {
 				if(person1.equals(person2)) {
 					continue;
 				}
-				ArrayList a = friendsList.get(person1);
-				ArrayList b = friendsList.get(person2);
+				ArrayList<String> a = friendsList.get(person1);
+				ArrayList<String> b = friendsList.get(person2);
 				for(int i = 0 ; i < a.size(); i++) {
 					if(b.contains(a.get(i))) {
 						commonFriend = true;
