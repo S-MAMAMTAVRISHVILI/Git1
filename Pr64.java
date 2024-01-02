@@ -18,17 +18,19 @@ public class Pr64 extends ConsoleProgram {
 			friendsList.putIfAbsent(person, new ArrayList<String>());
 			friendsList.get(person).add(friend);
 		}
+		// Without '[]' symbol
 		for(String name : friendsList.keySet()) {
 			print(name + " ");
 			for(int i = 0; i < friendsList.get(name).size(); i++) {
 				if(i == friendsList.get(name).size() - 1) {
-					println(friendsList.get(name).get(i) + ", ");
+					println(friendsList.get(name).get(i) + ",");
 					break;
 				}
-				print(friendsList.get(name).get(i) + ", ");
+				print(friendsList.get(name).get(i) + ",");
 			}
 			
 		}
+//		With '[]' symbol	
 //		for(String name : friendsList.keySet()) {
 //			println(name + " " + friendsList.get(name).toString());
 //		}
