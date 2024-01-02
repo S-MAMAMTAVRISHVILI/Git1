@@ -21,7 +21,7 @@ public class Pr64 extends ConsoleProgram {
 		for(String name : friendsList.keySet()) {
 			print(name + " ");
 			for(int i = 0; i < friendsList.get(name).size(); i++) {
-				if(i == friendsList.get(name).size()) {
+				if(i == friendsList.get(name).size() - 1) {
 					println(friendsList.get(name).get(i) + ", ");
 					break;
 				}
