@@ -19,7 +19,14 @@ public class Pr64 extends ConsoleProgram {
 			friendsList.get(person).add(friend);
 		}
 		for(String name : friendsList.keySet()) {
-			println(name + " " + friendsList.get(name).toString());
+			println(name + " ");
+			for(int i = 0; i < friendsList.get(name).size(); i++) {
+				print(friendsList.get(name).get(i) + ", ");
+			}
+			
 		}
+//		for(String name : friendsList.keySet()) {
+//			println(name + " " + friendsList.get(name).toString());
+//		}
 	}
 }
