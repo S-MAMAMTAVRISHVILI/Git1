@@ -1,21 +1,35 @@
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.StringTokenizer;
 
 import acm.program.ConsoleProgram;
 
 public class Pr63 extends ConsoleProgram {
 	public void run() {
-		HashMap<String, String> followersList = new HashMap<String, String>();
+		HashMap<String, ArrayList<String>> friendsList = new HashMap<String, ArrayList<String>>();
+		HashMap<String ,Integer> friendsNumber = new HashMap<String, Integer>();
 		while(true) {
-			String newFollower = readLine();
-			if(newFollower.equals("")) {
+			String line = readLine();
+			if(line.equals("")) {
 				break;
 			}
-			String person = readLine();
-			if(person.equals("")) {
-				break;
-			}
-			followersList.put(person, newFollower);
+			StringTokenizer tokenizer = new StringTokenizer(line);
+			String person = tokenizer.nextToken();
+			String newFriend = tokenizer.nextToken();
+			friendsList.putIfAbsent(person, new ArrayList<String>());
+			friendsList.get(person).add(newFriend);
+			friendsNumber.putIfAbsent(person, 0);
+			friendsNumber.put(person, friendsNumber.get(person) + 1);
 		}
-		
+		int max = 0;
+		String result = "";
+		for(String name : friendsNumber.keySet()) {
+			if(friendsNumber.get(name) > max) {
+				max = friendsNumber.get(name);
+				result = name;
+			}
+		}
+		println(result);
 	}
 }
